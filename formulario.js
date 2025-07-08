@@ -1,8 +1,9 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector(".formulario") //corresponde a una clase
+var listaInvitados = document.getElementById("Lista-de-invitados");
 
 formulario.onsubmit = function(e) {
 
-  e.prevent();
+  e.preventDefault(); //no renderizar7refresh
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
